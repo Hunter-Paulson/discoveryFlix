@@ -1,0 +1,58 @@
+@use '../base/settings' as *;
+
+footer {
+    background-color: $goldTransparent;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+
+ .footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+
+
+    .logo {
+        display: block;
+        width: 4.5rem;
+    }
+
+    
+
+.footerLinks {
+    ul {
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0.75rem;
+    }
+
+    @media screen and (min-width: 500px) {
+        ul {
+            flex-direction: row;
+        }
+    }
+
+    li {
+        padding-bottom: 0.5rem;
+    }
+
+    a {
+        margin: 0 0.5rem;
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none;
+
+        }
+}
+
+}
+}
+

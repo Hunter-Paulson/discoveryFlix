@@ -1,0 +1,84 @@
+@use '../base/settings' as *;
+
+.home-section .poster {
+    transition: ease .5s;
+    position: relative;
+
+    .hover-info {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: ease .8s;
+        
+        &:hover {
+            transition: all ease-in-out .5s;
+            background-color: rgba(0, 0, 0, .8);
+        }
+
+        .heartandrating {
+            display: flex;
+            justify-content: space-between;
+
+            .heart {
+                width: 48px;
+                height: 48px; 
+                align-self: flex-end;
+                margin-right: 1rem;
+            }
+            
+            p{
+                border-radius: 50%;
+                background: white;
+                color:rgba(0, 0, 0, .8);
+                border: 3px solid #fff;
+                width: 42px;
+                line-height: 42px;
+                margin: 0;
+                order: -1;
+                margin-top: 1rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    &:hover .hover-info, 
+    &:active .hover-info {
+        opacity: 1;
+        display: flex;
+    }
+
+    img {
+        display: block;
+        height: 300px;
+    }
+
+    h3{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+   h3, 
+   p {
+        margin: 0.5rem 1rem;
+        text-align: center;
+        color: $gold;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            transition: ease 3s;
+            color: #A86244;
+        }
+    }
+}
+

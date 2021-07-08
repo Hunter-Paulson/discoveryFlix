@@ -1,0 +1,70 @@
+@use '../base/settings' as *;
+
+.home-section .movies {
+
+    img {
+        width: 100%;
+    }
+
+    .poster {
+        margin: 0 auto;
+        overflow: hidden;
+        height: 100%;  
+    }
+
+    .movie {
+        margin: 0 auto;
+        width: 200px; 
+        height: 350px;
+    }
+}
+
+@media (min-width: $mobile) {
+
+       .home-section .movies {
+            display: grid;
+            grid-template-columns: repeat( 2, 200px); 
+            justify-content: center;
+            gap: 1rem;
+        }
+}
+
+@media (min-width: 500px) {
+
+   .home-section .movies {
+        display: grid;
+        grid-template-columns: repeat( 2, 180px); 
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .home-section .movies {
+         display: grid;
+         grid-template-columns: repeat( 3, 180px); 
+         justify-content: center;
+         gap: 3rem;
+     }
+ }
+
+@media (min-width: 1024px) {
+
+    .home-section .movies {
+         display: grid;
+         grid-template-columns: repeat( 4, 180px); 
+         justify-content: center;
+         gap: 4rem;
+     }
+ }
+
+@media (min-width: 1450px) {
+
+   .home-section .movies {
+        display: grid;
+        grid-template-columns: repeat( 6, 200px); 
+        justify-content: center;
+        gap: 2rem;
+    }
+}
